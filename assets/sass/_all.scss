@@ -1,0 +1,118 @@
+html, body{height: 100%}
+body{
+  //background: url("../images/bg-cover.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(204,204,204, 0.3);
+  color: black;
+  text-align: center;
+  font-size: 14px !important;
+}
+
+h2{
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--couleur-bleu);
+  padding-bottom: 20px;
+  &:hover{
+    color: var(--couleur-or);
+    cursor: pointer;
+  }
+
+  &::before{
+    content: url("../images/puce25.png");
+    margin-right: 5px;
+    margin-top: 30px;
+    padding-top: 25px;
+  }
+}
+
+.btn.lire-suite{
+  background-color: var(--couleur-bleu);
+  color: white;
+  border-color: var(--couleur-bleu);
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &:hover{
+    background-color: var(--couleur-or);
+    color: var(--couleur-bleu);
+  }
+}
+
+.rotary-container{
+  background: #fff;
+  padding: 0;
+}
+.rotary-topHeader{
+  padding: 20px 15px;
+
+  img{
+    max-width: 200px;
+    float: left;
+    text-align: left;
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--couleur-bleu);
+
+    &:hover{
+      color: var(--couleur-or);
+    }
+  }
+
+  .d-membre{
+    font-family: "Neo Sans Stb Bold", sans-serif;
+    font-weight: 500;
+    text-align: right;
+    margin: auto 0;
+    color: var(--couleur-bleu);
+  }
+}
+.rotary-menu{
+  margin: 0;
+  padding: 0;
+  .rotary-navbar{
+    background-color: var(--couleur-bleu);
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 1px 3px 4px 0 #adadad33;
+
+    .nav-link{
+      color: white;
+      padding: 25px 10px;
+      transition: 0.3s;
+      font-size: 1.2rem;
+
+      &:focus, &:hover{
+        color: var(--couleur-bleu);
+        background: var(--couleur-or);
+        transition: 0.3s;
+      }
+    }
+
+    .dropdown-item{
+      &:focus, &:hover{
+        color: white;
+        text-decoration: none;
+        background-color: var(--couleur-or) !important;
+      }
+      color: #3c3c3c;
+      font-size: 1.2rem;
+    }
+
+    .sm-menu{
+      border-radius: 0px;
+      //border: 0;
+      top: 97%;
+      box-shadow: rgba(173,173,173, 0.2) 1px 3px 4px 0;
+    }
+
+    .navbar-toggler{
+      outline: none !important;
+    }
+  }
+}
